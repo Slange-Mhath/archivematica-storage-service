@@ -121,7 +121,7 @@ of these settings or provide values to mandatory fields.
     - **Default:** `false`
 
 - **`SS_AUDIT_LOG_MIDDLEWARE`**:
-    - **Description:** enable logging of authenticated users with responses.
+    - **Description:** enable X-Username header with authenticated HTTP responses.
     - **Type:** `boolean`
     - **Default:** `false`
 
