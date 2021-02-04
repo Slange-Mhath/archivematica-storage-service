@@ -27,5 +27,4 @@ class AuditLogMiddlewareTestCase(TestCase):
         ):
             self.client.logout()
             response = self.client.get(settings.LOGIN_URL)
-            self.assertTrue(response.has_header("X-Username"))
-            self.assertEqual(response["X-Username"], "None")
+            self.assertFalse(response.has_header("X-Username"))
